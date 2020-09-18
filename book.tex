@@ -1,5 +1,7 @@
 \documentclass[a4paper, 12pt]{book}
-\usepackage{hyperref} 
+
+\usepackage{hyperref}
+
 \begin{document}
 
 \pagenumbering{roman}
@@ -14,22 +16,31 @@
 
 \section{Foreword}
 
-The macro system is probably the most contradictory feature of C: it provides a way to extend
-the host programming language with new syntactical constructs, thus forcing some ill-formed programs
-fail to compile, through is an increasingly treacherous technology, being able to potentially
+The macro system is probably the most contradictory feature of C: it provides a way to
+\href{https://en.wikipedia.org/wiki/Extensible_programming}{extend} the host programming
+language with new syntactical constructs, thus forcing some ill-formed programs fail
+to compile, through is an increasingly treacherous technology, being able to potentially
 cause a numerous amount of bugs out of nothing.
 
-This book was derived by my continuous experiments with the preprocessor: I have implemented some of
-the concepts of functional programming, including algebraic data types (ADTs) with exhaustive
-pattern matching, parametric polymorphism, higher-kinded types, and generalised ADTs, as well as from
-the world of object orientation: classes, dynamic dispatch, and all the coherent stuff: type
-introspection, type-safe error handling facilities and more.
+This book was derived by my continuous experiments with the preprocessor: I have implemented
+some of the concepts of functional programming, including
+\href{https://en.wikipedia.org/wiki/Algebraic_data_type}{algebraic data types (ADTs)} with
+\href{https://en.wikipedia.org/wiki/Proof_by_exhaustion}{exhaustive}
+\href{https://en.wikipedia.org/wiki/Pattern_matching}{pattern matching},
+\href{https://en.wikipedia.org/wiki/Parametric_polymorphism}{parametric polymorphism},
+\href{https://en.wikipedia.org/wiki/Kind_(type_theory)}{higher-kinded types}, and
+\href{https://en.wikipedia.org/wiki/Generalized_algebraic_data_type}{generalised ADTs}, as
+well as from the world of object orientation: classes,
+\href{https://en.wikipedia.org/wiki/Dynamic_dispatch}{dynamic dispatch}, and all the coherent
+stuff: \href{https://en.wikipedia.org/wiki/Type_introspection}{type introspection}, type-safe
+error handling facilities and more.
 
-So what I want to say: writing macros is an art. Macros, overall, can be considered as computer
-languages on their own, with custom syntax, given by their signatures, and semantics, defined by their
-bodies. In this book, I have accomplished my best concerning the development of macros, and I
-do believe that it will advance a reader to a completely new dimension of metaprogramming, show how
-much more beautiful macro interfaces can be, and develop the intuition in such a tricky topic.
+So what I want to say: writing macros is an art. Macros, overall, can even be considered as
+computer languages on their own, with custom syntax, given by their signatures, and
+semantics, defined by their bodies. In this book, I have accomplished my best concerning
+the development of macros, and I do believe that it will advance a reader to a completely
+new dimension of metaprogramming, show how much more beautiful macro interfaces can be, and
+develop the intuition in such a tricky topic.
 
 \newpage
 
